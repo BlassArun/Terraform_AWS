@@ -102,7 +102,7 @@ resource "aws_security_group" "web" {
   }
 }
 
-resource "aws_instance" "web_server" {
+resource "aws_instance" "web_servers" {
   ami = "ami-0fa3fe0fa7920f68e"
   count = 2
   instance_type = "t2.micro"
