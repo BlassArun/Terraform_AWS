@@ -119,7 +119,7 @@ resource "aws_instance" "web_server" {
     echo "Hello"
     echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCeRFYwYeDWNWULi37/yYstuDGANM6cGUK9ZaO91btiUWOEsM2PM/HyvPKKsBL8ySBfJFuuSI4TGeV1E2vOcltBUVy5MsHbFehWTnef26MsKg9uYuxx+4p0bzb4AYrA/usQyhkw0LKEAgEbhACbN3cx5QFd4iZ/W8XdXtd7bcSQ5PNoI2hF7bTvCWAHe9ItHJsnJe4RMwJ1s0hrelutscWlhz6BhR8vJs8Uz3JlVFg35UztDBoERhOBkZ4hq05hb4DWzk72SJjVBLAYloktUYCfEsxiAjGF+2xdLfAQHv4WKRwdZHrFC4zKyNbMVfzBxOh/zM15Uw73FEMfpiRGdzIPn7SU4mZLStEF/MBKDDTeuSUqcPDPrOPivWQTU6XNZRgJSuyIGOnDtdY1fuhaRoujq2X2AtAIP5YZ4ka44H6y2bcDLSwS2huEablbWBz7E2GELoAPiufmCbNFlX2lNCAR9A2iie7DI94mBnu47WxybVm05C5FayiwYI1fhaVkU3s= root@master" >> /home/ec2-user/.ssh/authorized_keys
     echo "key added"
-    EOF
+  EOF
 }
 
 output "web_servers_ips" {
