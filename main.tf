@@ -110,7 +110,7 @@ resource "aws_instance" "web_server" {
   vpc_security_group_ids = [aws_security_group.web.id]
   associate_public_ip_address = true
   tags = {
-    Name = "web-server-${count.index + 1}
+    Name = "web-server-${count.index + 1}"
   }
 
   user_data = <<-EOF
