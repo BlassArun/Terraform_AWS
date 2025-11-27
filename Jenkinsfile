@@ -19,11 +19,11 @@ pipline {
             steps {
                 script {
                     if (env.GIT_BRANCH == 'origin/develop') {
-                        sh 'terrform select dev'
+                        sh 'terraform workspace select dev'
                     } else if (env.GIT_BRANCH == 'origin/stage') {
-                        sh 'terraform select stage'
+                        sh 'terraform workspace select stage'
                     } else if {env.GIT_BRANCH == 'origin/main'} {
-                        sh 'terraform select prod' 
+                        sh 'terraform workspace select prod' 
                     }
                 }
                 
