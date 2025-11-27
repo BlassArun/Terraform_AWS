@@ -20,9 +20,9 @@ pipline {
                 script {
                     if (env.GIT_BRANCH == 'origin/develop') {
                         sh 'terrform select dev'
-                    }elif (env.GIT_BRANCH == 'origin/stage') {
+                    } else if (env.GIT_BRANCH == 'origin/stage') {
                         sh 'terraform select stage'
-                    }elif {env.GIT_BRANCH == 'origin/main'} {
+                    } else if {env.GIT_BRANCH == 'origin/main'} {
                         sh 'terraform select prod' 
                     }
                 }
