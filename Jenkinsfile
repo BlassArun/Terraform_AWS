@@ -1,5 +1,11 @@
 pipline {
     agent any
+    environment {
+        AWS_ACCESS_KEY_ID     = credentials('access-key')
+        AWS_SECRET_ACCESS_KEY = credentials('secret-key')
+
+
+    }
 
     stage {
         stage('Init') {
