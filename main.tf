@@ -104,7 +104,7 @@ resource "aws_security_group" "web" {
 
 resource "aws_instance" "web_servers" {
   ami = "ami-0fa3fe0fa7920f68e"
-  count = 2
+  count = 3
   instance_type = "t2.micro"
   subnet_id     = aws_subnet.public.id
   vpc_security_group_ids = [aws_security_group.web.id]
