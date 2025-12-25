@@ -22,7 +22,7 @@ pipline {
                         sh 'terraform workspace select dev'
                     } else if (env.GIT_BRANCH == 'origin/stage') {
                         sh 'terraform workspace select stage'
-                    } else if {env.GIT_BRANCH == 'origin/main'} {
+                    } else if (env.GIT_BRANCH == 'origin/main') {
                         sh 'terraform workspace select prod' 
                     }
                 }
